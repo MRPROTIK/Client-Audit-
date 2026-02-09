@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Website Technical Audit – AdsNord</title>
+
+<style>
+:root{
+  --blue:#1A73E8;
+  --blue-soft:#E8F0FE;
+  --green:#34A853;
+  --yellow:#FBBC05;
+  --red:#EA4335;
+  --dark:#202124;
+  --gray:#5f6368;
+  --light:#F8F9FA;
+}
+
+body{
+  margin:0;
+  background:#e0e0e0;
+  font-family:Segoe UI,Tahoma,Verdana,sans-serif;
+  color:var(--dark);
+}
+
+.page{
+  width:210mm;
+  min-height:297mm;
+  margin:10mm auto;
+  padding:18mm;
+  background:#fff;
+  box-shadow:0 0 10px rgba(0,0,0,.1);
+  position:relative;
+  box-sizing:border-box;
+}
+
+/* ===== HEADER ===== */
+.header-wrap{
+  background:linear-gradient(90deg,#E8F0FE 0%,#ffffff 75%);
+  padding:12px 14px 14px;
+  margin:-18mm -18mm 16px;
+}
+
+.header-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.brand img{ height:46px; }
+
+.brand-name{
+  font-size:17px;
+  font-weight:700;
+  letter-spacing:0.4px;
+}
+
+.header-right{
+  font-weight:700;
+  color:var(--gray);
+}
+
+.header-divider{
+  border-bottom:2px solid var(--blue);
+  margin:10px 0 8px;
+}
+
+.header-title{
+  font-size:16px;
+  font-weight:800;
+  letter-spacing:0.3px;
+  color:#1f1f1f;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  position:absolute;
+  bottom:14mm;
+  left:18mm;
+  right:18mm;
+  font-size:10px;
+  color:var(--gray);
+  background:var(--blue-soft);
+  border-top:1px solid #d2e3fc;
+  padding:8px 10px;
+  display:flex;
+  justify-content:space-between;
+}
+
+/* ===== META ===== */
+.meta{
+  margin-top:10px;
+  font-size:13.5px;
+  line-height:1.9;
+}
+
+.fill{
+  display:inline-block;
+  min-width:260px;
+  border-bottom:1px solid #999;
+}
+
+/* ===== Audit Breakdown ===== */
+.breakdown{
+  margin-top:14px;
+}
+
+.breakdown h3{
+  margin:0 0 10px;
+  font-size:15px;
+  font-weight:800;
+}
+
+.step{
+  margin-bottom:10px;
+  padding:10px 12px;
+  border:1px solid #e6e6e6;
+  border-left:5px solid var(--blue);
+  background:#fff;
+  border-radius:6px;
+}
+
+.step strong{
+  display:block;
+  margin-bottom:4px;
+  font-size:13px;
+}
+
+.step p{
+  margin:0;
+  font-size:12.6px;
+  color:#303134;
+  line-height:1.5;
+}
+
+/* ===== Table ===== */
+h3.section{
+  margin:14px 0 8px;
+  font-size:15px;
+  font-weight:800;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:10px 0 0;
+}
+
+th{
+  text-align:left;
+  padding:10px;
+  background:var(--blue-soft);
+  border-bottom:2px solid var(--blue);
+  font-size:12.8px;
+}
+
+td{
+  padding:10px;
+  border-bottom:1px solid #eee;
+  vertical-align:top;
+  font-size:12.8px;
+}
+
+.pill{
+  padding:4px 10px;
+  border-radius:20px;
+  font-size:11.5px;
+  font-weight:800;
+  color:#fff;
+  text-transform:uppercase;
+  display:inline-block;
+}
+
+.critical{background:var(--red);}
+.warning{background:var(--yellow);color:#222;}
+.good{background:var(--green);}
+
+.small{
+  font-size:11.8px;
+  color:#444;
+  line-height:1.45;
+}
+
+@media print{
+  body{background:none;}
+  .page{margin:0;box-shadow:none;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header-wrap">
+    <div class="header-top">
+      <div class="brand">
+        <!-- safest for PDF: keep logo local -->
+        <img src="./adsnord-logo.png" alt="AdsNord Logo" />
+        <div class="brand-name">AdsNord</div>
+      </div>
+      <div class="header-right">Technical SEO Audit</div>
+    </div>
+
+    <div class="header-divider"></div>
+
+    <div class="header-title">
+      Website Technical Audit – URL Structure, Crawlability & Core SEO Signals
+    </div>
+  </div>
+
+  <!-- META -->
+  <div class="meta">
+    <p><strong>Business Name:</strong> Basqat Trading &amp; Contracting W.L.L</p>
+    <p><strong>Website:</strong> basqatqatar.com</p>
+    <p><strong>Prepared by:</strong> AdsNord</p>
+    <p><strong>Date:</strong>  09-02-2026</p>
+  </div>
+
+  <!-- AUDIT BREAKDOWN -->
+  <div class="breakdown">
+    <h3>Audit Breakdown</h3>
+
+    <div class="step">
+      <strong>One</strong>
+      <p>
+        <b>Non-SEO-friendly URLs (.php + parameters).</b>
+        Pages use <span class="small">/index.php, /contactus.php, services.php?gid=...</span> style URLs.
+        This hurts readability, consistency, and long-term SEO scaling.
+      </p>
+    </div>
+
+    <div class="step">
+      <strong>Two</strong>
+      <p>
+        <b>Crawl / verification interruptions (risk).</b>
+        Some requests may trigger verification/anti-bot behavior.
+        If search engines face this, indexing and visibility can be impacted—especially for high-intent pages like Contact.
+      </p>
+    </div>
+
+    <div class="step">
+      <strong>Three</strong>
+      <p>
+        <b>On-page trust & relevance signals need alignment.</b>
+        Titles/search preview messaging may not consistently reflect core services, and
+        contact details appear inconsistent across locations—both can reduce trust and lead conversions.
+      </p>
+    </div>
+  </div>
+
+  <!-- TABLE -->
+  <h3 class="section">Priority Findings & Severity</h3>
+
+  <table>
+    <tr>
+      <th style="width:28%;">Category</th>
+      <th style="width:16%;">Status</th>
+      <th>Impact (Why it matters)</th>
+    </tr>
+
+    <tr>
+      <td><b>URL Canonicalization</b><br><span class="small">.php → clean slugs</span></td>
+      <td><span class="pill critical">Critical</span></td>
+      <td class="small">
+        Multiple URL formats can split SEO signals and reduce clarity for users.
+        Recommended: clean slugs + 301 redirects + consistent internal linking.
+      </td>
+    </tr>
+
+    <tr>
+      <td><b>Crawlability / Indexing</b><br><span class="small">verification risk</span></td>
+      <td><span class="pill critical">Critical</span></td>
+      <td class="small">
+        If crawlers are blocked or delayed, pages may not index properly → lower Google visibility.
+        Recommended: ensure bots can access key pages (Home/Services/Contact).
+      </td>
+    </tr>
+
+    <tr>
+      <td><b>Titles &amp; Search Messaging</b></td>
+      <td><span class="pill warning">Warning</span></td>
+      <td class="small">
+        Misaligned titles/preview text can attract wrong intent traffic and reduce CTR.
+        Recommended: rewrite titles/meta for core pages with correct service positioning.
+      </td>
+    </tr>
+
+    <tr>
+      <td><b>Contact Consistency</b><br><span class="small">email/CTA trust</span></td>
+      <td><span class="pill warning">Warning</span></td>
+      <td class="small">
+        Inconsistent contact details reduce trust and can lead to missed enquiries.
+        Recommended: standardize email/phone across header/footer/contact page.
+      </td>
+    </tr>
+
+    <tr>
+      <td><b>Services URL Structure</b><br><span class="small">?gid= parameters</span></td>
+      <td><span class="pill warning">Warning</span></td>
+      <td class="small">
+        Parameter-based service URLs are harder to scale and less clean.
+        Recommended: /services/service-name structure with canonical tags.
+      </td>
+    </tr>
+  </table>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>adsnord.com · info@adsnord.com · +46 76 430 47 02</span>
+    <span>LinkedIn · YouTube · Google Ads Strategy</span>
+  </footer>
+
+</div>
+
+</body>
+</html>

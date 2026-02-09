@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Ads Account Audit – AdsNord</title>
+
+<style>
+:root{
+  --blue:#1A73E8;
+  --blue-soft:#E8F0FE;
+  --green:#34A853;
+  --yellow:#FBBC05;
+  --red:#EA4335;
+  --dark:#202124;
+  --gray:#5f6368;
+  --light:#F8F9FA;
+}
+
+body{
+  margin:0;
+  background:#e0e0e0;
+  font-family:Segoe UI,Tahoma,Verdana,sans-serif;
+  color:var(--dark);
+}
+
+.page{
+  width:210mm;
+  min-height:297mm;
+  margin:10mm auto;
+  padding:18mm;
+  background:#fff;
+  box-shadow:0 0 10px rgba(0,0,0,.1);
+  position:relative;
+  box-sizing:border-box;
+}
+
+/* ===== HEADER ===== */
+.header-wrap{
+  background:linear-gradient(90deg,#E8F0FE 0%,#ffffff 75%);
+  padding:12px 14px 14px;
+  margin:-18mm -18mm 20px;
+}
+
+.header-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.brand img{
+  height:46px;
+}
+
+.brand-name{
+  font-size:17px;
+  font-weight:700;
+  letter-spacing:0.4px;
+}
+
+.header-right{
+  font-weight:600;
+  color:var(--gray);
+}
+
+.header-divider{
+  border-bottom:2px solid var(--blue);
+  margin:10px 0 8px;
+}
+
+.header-title{
+  font-size:16px;
+  font-weight:700;
+  letter-spacing:0.3px;
+  color:#1f1f1f;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  position:absolute;
+  bottom:14mm;
+  left:18mm;
+  right:18mm;
+  font-size:10px;
+  color:var(--gray);
+  background:var(--blue-soft);
+  border-top:1px solid #d2e3fc;
+  padding:8px 10px;
+  display:flex;
+  justify-content:space-between;
+}
+
+/* ===== CONTENT ===== */
+.meta{
+  margin-top:22px;
+  font-size:14px;
+  line-height:2;
+}
+
+.fill{
+  display:inline-block;
+  min-width:260px;
+  border-bottom:1px solid #999;
+}
+
+/* Audit Breakdown */
+.breakdown{
+  margin-top:28px;
+}
+
+.breakdown h3{
+  margin-bottom:16px;
+  font-size:16px;
+  font-weight:700;
+}
+
+.step{
+  margin-bottom:14px;
+  padding-bottom:14px;
+  border-bottom:1px dashed #ccc;
+}
+
+.step strong{
+  display:block;
+  margin-bottom:6px;
+}
+
+/* Table */
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:26px 0;
+}
+
+th{
+  text-align:left;
+  padding:12px;
+  background:var(--blue-soft);
+  border-bottom:2px solid var(--blue);
+}
+
+td{
+  padding:12px;
+  border-bottom:1px solid #eee;
+  vertical-align:top;
+}
+
+.pill{
+  padding:4px 12px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:700;
+  color:#fff;
+  text-transform:uppercase;
+}
+
+.critical{background:var(--red);}
+.warning{background:var(--yellow);color:#222;}
+.good{background:var(--green);}
+
+/* Print */
+@media print{
+  body{background:none;}
+  .page{margin:0;box-shadow:none;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header-wrap">
+    <div class="header-top">
+      <div class="brand">
+        <img src="./adsnord-logo.png" alt="AdsNord Logo">
+        <div class="brand-name">AdsNord</div>
+      </div>
+      <div class="header-right">Executive Audit</div>
+    </div>
+
+    <div class="header-divider"></div>
+
+    <div class="header-title">
+      Google Ads Account Audit – Performance Review & Growth Opportunities
+    </div>
+  </div>
+
+  <!-- META -->
+  <div class="meta">
+    <p><strong>Business Name:</strong> <span class="fill"></span></p>
+    <p><strong>Prepared by:</strong> <span class="fill"></span></p>
+    <p><strong>Date:</strong> <span class="fill"></span></p>
+  </div>
+
+  <!-- AUDIT BREAKDOWN -->
+  <div class="breakdown">
+    <h3>Audit Breakdown</h3>
+
+    <div class="step">
+      <strong>One</strong>
+      <div class="fill" style="width:100%"></div>
+    </div>
+
+    <div class="step">
+      <strong>Two</strong>
+      <div class="fill" style="width:100%"></div>
+    </div>
+
+    <div class="step">
+      <strong>Three</strong>
+      <div class="fill" style="width:100%"></div>
+    </div>
+  </div>
+
+  <!-- TABLE -->
+  <h3 style="margin-top:30px;">Account Health & Growth Signals</h3>
+
+  <table>
+    <tr>
+      <th>Category</th>
+      <th>Status</th>
+      <th>Notes / Strength / Risk</th>
+    </tr>
+    <tr>
+      <td>Conversion Tracking</td>
+      <td><span class="pill critical">Critical</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wasteful Spend</td>
+      <td><span class="pill warning">Warning</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ad Strength</td>
+      <td><span class="pill good">Good</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bidding Strategy</td>
+      <td><span class="pill warning">Warning</span></td>
+      <td></td>
+    </tr>
+  </table>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>adsnord.com · info@adsnord.com · +46 76 430 47 02</span>
+    <span>LinkedIn · YouTube · Google Ads Strategy</span>
+  </footer>
+
+</div>
+
+</body>
+</html>
