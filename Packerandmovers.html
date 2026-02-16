@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Audit – AdsNord</title>
+
+<style>
+:root{
+  --blue:#1A73E8;
+  --blue-soft:#E8F0FE;
+  --green:#34A853;
+  --yellow:#FBBC05;
+  --red:#EA4335;
+  --dark:#202124;
+  --gray:#5f6368;
+}
+
+*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  background:#e0e0e0;
+  font-family:Segoe UI,Tahoma,Verdana,sans-serif;
+  color:var(--dark);
+}
+
+.page{
+  width:210mm;
+  min-height:297mm;
+  margin:10mm auto;
+  padding:18mm;
+  background:#fff;
+  box-shadow:0 0 10px rgba(0,0,0,.1);
+  position:relative;
+}
+
+/* HEADER */
+.header-wrap{
+  background:linear-gradient(90deg,#E8F0FE 0%,#ffffff 75%);
+  padding:14px 18px;
+  margin:-18mm -18mm 20px;
+}
+
+.header-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.brand img{
+  height:48px;
+  width:auto;
+}
+
+.brand-name{
+  font-size:18px;
+  font-weight:700;
+}
+
+.header-right{
+  font-weight:600;
+  color:var(--gray);
+}
+
+.header-divider{
+  border-bottom:2px solid var(--blue);
+  margin:12px 0 10px;
+}
+
+.header-title{
+  font-size:16px;
+  font-weight:700;
+}
+
+/* META */
+.meta{
+  font-size:14px;
+  line-height:2;
+  margin-top:8px;
+}
+
+/* CONTENT */
+h3{
+  margin-top:22px;
+  font-size:15px;
+}
+
+ul{
+  margin:8px 0 0 20px;
+  font-size:13px;
+  line-height:1.6;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:16px;
+  table-layout:fixed;
+}
+
+th, td{
+  padding:12px;
+  border-bottom:1px solid #eee;
+  font-size:13px;
+  vertical-align:top;
+}
+
+th{
+  background:var(--blue-soft);
+  border-bottom:2px solid var(--blue);
+  text-align:left;
+}
+
+.pill{
+  padding:5px 12px;
+  border-radius:20px;
+  font-size:11px;
+  font-weight:700;
+  color:#fff;
+  text-transform:uppercase;
+}
+
+.critical{background:var(--red);}
+.warning{background:var(--yellow);color:#222;}
+.good{background:var(--green);}
+
+/* FOOTER */
+footer{
+  position:absolute;
+  bottom:14mm;
+  left:18mm;
+  right:18mm;
+  font-size:11px;
+  color:var(--gray);
+  background:var(--blue-soft);
+  border-top:1px solid #d2e3fc;
+  padding:10px 12px;
+  display:flex;
+  justify-content:space-between;
+}
+
+@media print{
+  body{background:none;}
+  .page{margin:0;box-shadow:none;}
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+
+<!-- HEADER -->
+<div class="header-wrap">
+  <div class="header-top">
+    <div class="brand">
+      <img src="adsnord-logo.png" alt="AdsNord Logo">
+      <div class="brand-name">AdsNord</div>
+    </div>
+    <div class="header-right">Executive Audit</div>
+  </div>
+
+  <div class="header-divider"></div>
+
+  <div class="header-title">
+    Website Audit – Issues Identified
+  </div>
+</div>
+
+<!-- META -->
+<div class="meta">
+  <p><strong>Business Name:</strong> https://packersandmoversdoha.com/</p>
+  <p><strong>Prepared by:</strong> AdsNord</p>
+  <p><strong>Date:</strong> 19 September 2025</p>
+</div>
+
+<h3>Core Structural & Conversion Issues</h3>
+<ul>
+  <li><strong>URL Problem:</strong> Default WordPress pages and low-quality URLs are publicly accessible.</li>
+  <li><strong>Hero Section Problem:</strong> Generic messaging without strong differentiation and immediate authority.</li>
+  <li><strong>Call To Action Problem:</strong> No single dominant primary CTA guiding the user journey.</li>
+  <li><strong>Email Problem:</strong> Non-branded email reduces perceived professionalism.</li>
+  <li><strong>Our Achievements Section Problem:</strong> Weak or unrealistic counters reduce credibility.</li>
+  <li><strong>Photo Gallery Problem:</strong> AI/stock-style images reduce authenticity.</li>
+  <li><strong>Contact Form Problem:</strong> Limited trust signals and clarity.</li>
+</ul>
+
+<h3>Additional Risk & Quality Signals</h3>
+
+<table>
+<tr>
+  <th>Category</th>
+  <th>Status</th>
+  <th>Issues Identified</th>
+</tr>
+
+<tr>
+  <td>Default WordPress Content</td>
+  <td><span class="pill critical">Critical</span></td>
+  <td>Sample Page, Hello World, and archive structures exist publicly.</td>
+</tr>
+
+<tr>
+  <td>Spelling & Editorial Errors</td>
+  <td><span class="pill critical">Critical</span></td>
+  <td>Grammar and spelling inconsistencies in trust statements.</td>
+</tr>
+
+<tr>
+  <td>Trust & Authority Signals</td>
+  <td><span class="pill warning">Warning</span></td>
+  <td>Limited verifiable proof elements (licenses, certifications, structured identity).</td>
+</tr>
+
+<tr>
+  <td>Local SEO Signals</td>
+  <td><span class="pill warning">Warning</span></td>
+  <td>Local authority positioning not strongly reinforced.</td>
+</tr>
+
+<tr>
+  <td>Content Depth</td>
+  <td><span class="pill warning">Warning</span></td>
+  <td>Repetitive/templated service content limits uniqueness.</td>
+</tr>
+
+<tr>
+  <td>Service Clarity</td>
+  <td><span class="pill good">Good</span></td>
+  <td>Service intent and contact visibility are clear.</td>
+</tr>
+
+</table>
+
+<footer>
+  <span>adsnord.com · info@adsnord.com · +46 76 430 47 02</span>
+  <span>LinkedIn · YouTube · Growth Strategy</span>
+</footer>
+
+</div>
+</body>
+</html>
