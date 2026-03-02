@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>VVS Synlighet & Konverteringsaudit – AdsNord</title>
+
+<style>
+:root{
+  --blue:#1A73E8;
+  --blue-soft:#E8F0FE;
+  --green:#34A853;
+  --yellow:#FBBC05;
+  --red:#EA4335;
+  --dark:#202124;
+  --gray:#5f6368;
+}
+
+*{ box-sizing:border-box; }
+
+body{
+  margin:0;
+  background:#e0e0e0;
+  font-family:Segoe UI,Tahoma,Verdana,sans-serif;
+  color:var(--dark);
+}
+
+.page{
+  width:210mm;
+  min-height:297mm;
+  margin:10mm auto;
+  padding:18mm;
+  background:#fff;
+  box-shadow:0 0 10px rgba(0,0,0,.1);
+  position:relative;
+}
+
+/* HEADER */
+.header-wrap{
+  background:linear-gradient(90deg,#E8F0FE 0%,#ffffff 75%);
+  padding:12px 14px 14px;
+  margin:-18mm -18mm 16px;
+}
+
+.header-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.brand img{
+  height:46px;
+}
+
+.brand-name{
+  font-size:17px;
+  font-weight:700;
+}
+
+.header-right{
+  font-weight:600;
+  color:var(--gray);
+}
+
+.header-divider{
+  border-bottom:2px solid var(--blue);
+  margin:10px 0 8px;
+}
+
+.header-title{
+  font-size:15.5px;
+  font-weight:700;
+}
+
+/* META */
+.meta{
+  font-size:13.5px;
+  line-height:1.9;
+  margin-top:10px;
+}
+.meta p{ margin:2px 0; }
+
+/* CONTENT */
+h3{
+  font-size:15px;
+  margin-top:18px;
+  margin-bottom:8px;
+}
+
+ul{
+  margin:8px 0 0 18px;
+  font-size:12.8px;
+  line-height:1.55;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:14px;
+  table-layout:fixed;
+}
+
+th, td{
+  padding:10px;
+  border-bottom:1px solid #eee;
+  font-size:12.6px;
+  vertical-align:top;
+  word-wrap:break-word;
+}
+
+th{
+  background:var(--blue-soft);
+  border-bottom:2px solid var(--blue);
+  text-align:left;
+}
+
+.pill{
+  padding:4px 10px;
+  border-radius:20px;
+  font-size:11px;
+  font-weight:700;
+  color:#fff;
+  text-transform:uppercase;
+  display:inline-block;
+}
+
+.critical{background:var(--red);}
+.warning{background:var(--yellow);color:#222;}
+.good{background:var(--green);}
+
+/* FOOTER */
+footer{
+  position:absolute;
+  bottom:14mm;
+  left:18mm;
+  right:18mm;
+  font-size:10px;
+  color:var(--gray);
+  background:var(--blue-soft);
+  border-top:1px solid #d2e3fc;
+  padding:8px 10px;
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+}
+
+@media print{
+  body{background:none;}
+  .page{margin:0;box-shadow:none;}
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header-wrap">
+    <div class="header-top">
+      <div class="brand">
+        <!-- Replace with your logo path or base64 -->
+        <img src="adsnord-logo.png" alt="AdsNord Logo">
+        <div class="brand-name">AdsNord</div>
+      </div>
+      <div class="header-right">Executive Audit</div>
+    </div>
+
+    <div class="header-divider"></div>
+
+    <div class="header-title">
+      VVS Synlighet & Konverteringsaudit – Identifierade Förbättringar
+    </div>
+  </div>
+
+  <!-- META -->
+  <div class="meta">
+    <p><strong>Företag:</strong> Skaraborgs Värme & Rörinstallation</p>
+    <p><strong>Sökfras analyserad:</strong> “VVS Skövde”</p>
+    <p><strong>Platsfokus:</strong> Skövde (Skaraborg)</p>
+    <p><strong>Google Ads-status:</strong> Ingen synlig annonsering för denna sökfras</p>
+    <p><strong>Akut/Jour-positionering:</strong> Ingen tydlig “Akut/Jour” signalering (OK om fokus är planerade arbeten – men bör då tydliggöras)</p>
+    <p><strong>Upprättad av:</strong> AdsNord</p>
+    <p><strong>Datum:</strong> 02 March 2026</p>
+  </div>
+
+  <!-- CORE ISSUES -->
+  <h3>Kärnproblem: Synlighet, Landing Page & Conversion Clarity</h3>
+  <ul>
+    <li><strong>Missad betald synlighet:</strong> Ingen Google Ads-närvaro på “VVS Skövde” → risk att tappa högintenta leads till konkurrenter som annonserar.</li>
+    <li><strong>Ingen dedikerad Skövde-landningssida:</strong> Användaren leds mer in i en generell webbplatsstruktur snarare än en “one-goal” lead sida.</li>
+    <li><strong>För mycket text / låg skannbarhet:</strong> Besökare måste läsa mycket innan nästa steg blir tydligt → sänker konverteringsgrad.</li>
+    <li><strong>Budskapet kan spetsas:</strong> “Din lokala VVS & värmepumpsleverantör” är bra men kan göras mer konverteringsdrivet (t.ex. tidslöfte, tydlig tjänst + område).</li>
+    <li><strong>CTA-hierarki kan förenklas:</strong> Kontakt finns, men upplevelsen kan styras hårdare mot ett primärt mål (Ring / Boka / Förfrågan).</li>
+  </ul>
+
+  <h3>Kvalitet & Risk-signaler</h3>
+  <table>
+    <tr>
+      <th>Kategori</th>
+      <th>Status</th>
+      <th>Observation</th>
+    </tr>
+
+    <tr>
+      <td>Google Ads Synlighet</td>
+      <td><span class="pill warning">Warning</span></td>
+      <td>Ingen synlig annonsering på “VVS Skövde” → förlorad efterfrågan när konkurrenter tar topplaceringar.</td>
+    </tr>
+
+    <tr>
+      <td>Telefon ovanför vikningen</td>
+      <td><span class="pill good">Good</span></td>
+      <td>Kontaktuppgifter syns tydligt i toppen, vilket är bra för snabb kontakt.</td>
+    </tr>
+
+    <tr>
+      <td>Landing Page-struktur</td>
+      <td><span class="pill warning">Warning</span></td>
+      <td>Besökaren möts av en bred webbplats (många menyval) istället för en dedikerad “Skövde VVS” sida med ett tydligt mål.</td>
+    </tr>
+
+    <tr>
+      <td>Textmängd & Skannbarhet</td>
+      <td><span class="pill warning">Warning</span></td>
+      <td>Mycket text utan tydliga “snabba val” (tjänster, områden, tidslöfte, trust signals) kan minska lead rate.</td>
+    </tr>
+
+    <tr>
+      <td>Modernitet / Visuellt intryck</td>
+      <td><span class="pill good">Good</span></td>
+      <td>Sidan känns modern och seriös. Bra baseline för att öka konvertering med små förbättringar.</td>
+    </tr>
+
+    <tr>
+      <td>Konverteringsfokus (1 mål)</td>
+      <td><span class="pill warning">Warning</span></td>
+      <td>För att öka leads behöver sidan styra mer aggressivt mot ett primärt mål: Ring / Boka / Snabbförfrågan.</td>
+    </tr>
+  </table>
+
+  <h3>Potentiell Effekt</h3>
+  <ul>
+    <li><strong>Fler förfrågningar utan mer trafik:</strong> Ökad konvertering genom tydligare CTA, kortare text och en dedikerad Skövde-landningssida.</li>
+    <li><strong>Fånga mer efterfrågan:</strong> En liten Google Ads-kampanj på “VVS Skövde / rörmokare Skövde” kan ta marknadsandel snabbt.</li>
+    <li><strong>Högre lead-kvalitet:</strong> Segmenterade landningssidor per tjänst (VVS / värmepump / ventilation) ger mer relevanta leads.</li>
+  </ul>
+
+  <h3>Rekommenderade Åtgärder (Hög Impact Fixes)</h3>
+  <ul>
+    <li><strong>Skapa en dedikerad landningssida:</strong> “VVS i Skövde” med 1 primärt mål (Ring/Boka).</li>
+    <li><strong>Skär ner text & bygg skannbarhet:</strong> Kort intro + bullet tjänster + områden + trust (ISO, garanti, omdömen) + CTA.</li>
+    <li><strong>Stärk konverteringsbudskap:</strong> Lägg till tidslöfte / svarstid / serviceområde tydligt (t.ex. “Snabb återkoppling samma dag”).</li>
+    <li><strong>CTA förstärkning:</strong> Sticky call button på mobil + tydligare “Boka tid / Kontakta oss” placering.</li>
+    <li><strong>Om ni vill växa snabbare:</strong> Starta Google Ads med strikt geo runt Skövde + separata kampanjer per tjänst.</li>
+  </ul>
+
+  <h3>Nästa Steg (10 min genomgång)</h3>
+  <ul>
+    <li>Jag kan visa exakt vilka förändringar som ger snabbast effekt på inkommande förfrågningar.</li>
+    <li>Fokus: Skövde-landningssida + konverteringsförenkling + (valfritt) Google Ads start.</li>
+  </ul>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>adsnord.com · info@adsnord.com · +46 76 430 47 02</span>
+    <span>LinkedIn · YouTube · Growth Strategy</span>
+  </footer>
+
+</div>
+</body>
+</html>

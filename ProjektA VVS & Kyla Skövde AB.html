@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>VVS Synlighet & Konverteringsaudit – AdsNord</title>
+
+<style>
+:root{
+  --blue:#1A73E8;
+  --blue-soft:#E8F0FE;
+  --green:#34A853;
+  --yellow:#FBBC05;
+  --red:#EA4335;
+  --dark:#202124;
+  --gray:#5f6368;
+}
+
+*{ box-sizing:border-box; }
+
+body{
+  margin:0;
+  background:#e0e0e0;
+  font-family:Segoe UI,Tahoma,Verdana,sans-serif;
+  color:var(--dark);
+}
+
+.page{
+  width:210mm;
+  min-height:297mm;
+  margin:10mm auto;
+  padding:18mm;
+  background:#fff;
+  box-shadow:0 0 10px rgba(0,0,0,.1);
+  position:relative;
+}
+
+/* HEADER */
+.header-wrap{
+  background:linear-gradient(90deg,#E8F0FE 0%,#ffffff 75%);
+  padding:12px 14px 14px;
+  margin:-18mm -18mm 16px;
+}
+
+.header-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.brand img{
+  height:46px;
+}
+
+.brand-name{
+  font-size:17px;
+  font-weight:700;
+}
+
+.header-right{
+  font-weight:600;
+  color:var(--gray);
+}
+
+.header-divider{
+  border-bottom:2px solid var(--blue);
+  margin:10px 0 8px;
+}
+
+.header-title{
+  font-size:15.5px;
+  font-weight:700;
+}
+
+/* META */
+.meta{
+  font-size:13.5px;
+  line-height:1.9;
+  margin-top:10px;
+}
+.meta p{ margin:2px 0; }
+
+/* CONTENT */
+h3{
+  font-size:15px;
+  margin-top:18px;
+  margin-bottom:8px;
+}
+
+ul{
+  margin:8px 0 0 18px;
+  font-size:12.8px;
+  line-height:1.55;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:14px;
+  table-layout:fixed;
+}
+
+th, td{
+  padding:10px;
+  border-bottom:1px solid #eee;
+  font-size:12.6px;
+  vertical-align:top;
+  word-wrap:break-word;
+}
+
+th{
+  background:var(--blue-soft);
+  border-bottom:2px solid var(--blue);
+  text-align:left;
+}
+
+.pill{
+  padding:4px 10px;
+  border-radius:20px;
+  font-size:11px;
+  font-weight:700;
+  color:#fff;
+  text-transform:uppercase;
+  display:inline-block;
+}
+
+.critical{background:var(--red);}
+.warning{background:var(--yellow);color:#222;}
+.good{background:var(--green);}
+
+/* FOOTER */
+footer{
+  position:absolute;
+  bottom:14mm;
+  left:18mm;
+  right:18mm;
+  font-size:10px;
+  color:var(--gray);
+  background:var(--blue-soft);
+  border-top:1px solid #d2e3fc;
+  padding:8px 10px;
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+}
+
+@media print{
+  body{background:none;}
+  .page{margin:0;box-shadow:none;}
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header-wrap">
+    <div class="header-top">
+      <div class="brand">
+        <!-- Replace with your logo path or base64 -->
+        <img src="adsnord-logo.png" alt="AdsNord Logo">
+        <div class="brand-name">AdsNord</div>
+      </div>
+      <div class="header-right">Executive Audit</div>
+    </div>
+
+    <div class="header-divider"></div>
+
+    <div class="header-title">
+      VVS Synlighet & Konverteringsaudit – Identifierade Förbättringar
+    </div>
+  </div>
+
+  <!-- META -->
+  <div class="meta">
+    <p><strong>Företag:</strong> ProjektA VVS & Kyla Skövde AB (pvks.se)</p>
+    <p><strong>Platsfokus:</strong> Skövde (Skaraborg)</p>
+    <p><strong>Google Ads-status:</strong> Ingen synlig annonsering (utifrån granskning)</p>
+    <p><strong>Akut/Jour-positionering:</strong> Ingen tydlig “Akut/Jour” signalering (OK om fokus är planerade arbeten – men måste då kommuniceras kristallklart)</p>
+    <p><strong>Upprättad av:</strong> AdsNord</p>
+    <p><strong>Datum:</strong> 02 March 2026</p>
+  </div>
+
+  <!-- CORE ISSUES -->
+  <h3>Kärnproblem: Lead-Flöde, CTA & Webbplatsens Fokus</h3>
+  <ul>
+    <li><strong>Missad betald synlighet:</strong> Utan Google Ads riskerar ni att tappa högintenta leads när konkurrenter tar toppositionerna.</li>
+    <li><strong>Telefon ej dominant ovanför vikningen:</strong> Det är inte tydligt direkt hur en besökare snabbt kontaktar er (särskilt på mobil).</li>
+    <li><strong>Ingen dedikerad landningssida för lead capture:</strong> Besökaren leds in i en bred webbplatsstruktur istället för en “one-goal” sida (Boka/Ring/Offert).</li>
+    <li><strong>För mycket text / låg skannbarhet:</strong> Besökare måste läsa mycket innan de förstår nästa steg → sänker konvertering.</li>
+    <li><strong>Header/navigering skapar friktion:</strong> Menyn känns tung/”boring” och tar visuellt fokus från huvudmålet (få kontakt/offerter).</li>
+    <li><strong>Offert-formulär är långt:</strong> Många fält (inkl. adress/postnummer) ökar avhopp för användare som “bara vill bli uppringd”.</li>
+  </ul>
+
+  <h3>Kvalitet & Risk-signaler</h3>
+  <table>
+    <tr>
+      <th>Kategori</th>
+      <th>Status</th>
+      <th>Observation</th>
+    </tr>
+
+    <tr>
+      <td>Ovanför vikningen (Kontakt/CTA)</td>
+      <td><span class="pill critical">Critical</span></td>
+      <td>Telefon och primär kontaktväg behöver vara omedelbart synlig (mobile-first). Förlorad konvertering när nästa steg inte är tydligt direkt.</td>
+    </tr>
+
+    <tr>
+      <td>Landing Page-struktur</td>
+      <td><span class="pill warning">Warning</span></td>
+      <td>Ingen tydlig “Skövde VVS” landningssida som fokuserar på 1 mål: Ring/Boka/Offert. Nu blir flödet mer “browse” än “convert”.</td>
+    </tr>
+
+    <tr>
+      <td>Formulärfriktion</td>
+      <td><span class="pill warning">Warning</span></td>
+      <td>Offert-formuläret är långt med många obligatoriska fält → hög risk för avhopp. Försteg “Snabbförfrågan” rekommenderas.</td>
+    </tr>
+
+    <tr>
+      <td>Budskap & Scannability</td>
+      <td><span class="pill warning">Warning</span></td>
+      <td>För mycket text, få snabba val (tjänster/områden). Struktur med rubriker + bulletpoints skulle öka tydlighet och konvertering.</td>
+    </tr>
+
+    <tr>
+      <td>Header / UX-fokus</td>
+      <td><span class="pill warning">Warning</span></td>
+      <td>Header tar mycket visuellt utrymme och skapar ett “tungt” första intryck. CTA bör dominera — inte navigeringen.</td>
+    </tr>
+
+    <tr>
+      <td>Grundläggande Trust Signals</td>
+      <td><span class="pill good">Good</span></td>
+      <td>Kontaktuppgifter finns och företagsinformation syns i footern, vilket bygger grundtillit.</td>
+    </tr>
+  </table>
+
+  <h3>Potentiell Effekt (Leads & Tillväxt)</h3>
+  <ul>
+    <li><strong>Högre lead-rate utan mer trafik:</strong> Bara genom att förenkla CTA och skapa en dedikerad landningssida kan inkommande förfrågningar öka.</li>
+    <li><strong>Snabb marknadsandel via Ads (valfritt):</strong> En liten Google Ads-kampanj för “VVS Skövde / rörmokare Skövde” kan fånga efterfrågan som redan finns.</li>
+    <li><strong>Färre avhopp i offertflödet:</strong> Kortare formulär = fler inskickade leads.</li>
+  </ul>
+
+  <h3>Rekommenderade Åtgärder (Hög Impact Fixes)</h3>
+  <ul>
+    <li><strong>Gör kontakt dominant ovanför vikningen:</strong> stor telefon + “Ring nu” + sticky call button på mobil.</li>
+    <li><strong>Skapa en dedikerad Skövde-landningssida:</strong> med 1 primärt mål (Ring/Boka). Inkludera tjänster, område, trust och FAQ.</li>
+    <li><strong>Bygg “Snabb Offert” (2-stegs flöde):</strong> Steg 1: namn + telefon + ärende. Steg 2: adress/postnummer efter första kontakt.</li>
+    <li><strong>Skär ner text / öka skannbarhet:</strong> Rubriker + 5 bullets + tydliga blocks (Tjänster / Område / Varför oss / CTA).</li>
+    <li><strong>Header förenkling:</strong> mindre menyhöjd, tydligare primär CTA (Offert/Ring) och bättre hierarki.</li>
+    <li><strong>Om ni vill växa snabbt:</strong> starta Google Ads med strikt geo runt Skövde + separata kampanjer per tjänst (VVS / Kyla / Service).</li>
+  </ul>
+
+  <h3>Nästa Steg (10 min genomgång)</h3>
+  <ul>
+    <li>Jag kan visa exakt vilka förändringar som ger snabbast effekt på offerter/telefonsamtal.</li>
+    <li>Fokus: Kontakt ovanför vikningen + landningssida + kort offertflöde (+ valfritt Ads-start).</li>
+  </ul>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>adsnord.com · info@adsnord.com · +46 76 430 47 02</span>
+    <span>LinkedIn · YouTube · Growth Strategy</span>
+  </footer>
+
+</div>
+</body>
+</html>
